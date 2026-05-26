@@ -1,0 +1,31 @@
+# Data Files
+
+The data files used in this project are confidential laboratory data from the
+Lam Laboratory at the University of Delaware and are not included in this repository.
+
+## Required Files
+
+Place the following files in this `data/` directory to run the notebook:
+
+| Filename | Description | Source |
+|---|---|---|
+| `human_mouse_mito_overlay.xlsx` | Human mitochondrial proteomics — pharmacological Hsp90β modulation | Lam Laboratory |
+| `Copy of betaKO_rna_protein_mapped_aug182024.xlsx` | Mouse Hsp90β KO vs wildtype RNA-Seq | Lam Laboratory |
+| `Diff_Exp_Combined_Outliers_removed.xlsx` | Alpha vs Beta KO differential expression | Lam Laboratory |
+| `LamCK_062223_cyclicloess_Ttest__2_.xlsx` | Human cardiac proteomics NF vs ICM | Lam Laboratory |
+
+
+## Sheets Used From Each File
+
+### human_mouse_mito_overlay.xlsx
+- `Hsp90-dependent subset` — 46 confirmed Hsp90β client proteins (positive labels)
+- `treatment_groups_proteomics` — 5,876 proteins for negative example filtering
+
+### Copy of betaKO_rna_protein_mapped_aug182024.xlsx
+- `rna_WT_vs_Beta` — 14,943 genes with logFC, FDR, logCPM (Beta KO features)
+
+### Diff_Exp_Combined_Outliers_removed.xlsx
+- `Alpha_vs_Beta` — 14,921 genes with logFC, FDR (isoform specificity features)
+
+### LamCK_062223_cyclicloess_Ttest__2_.xlsx
+- `cyclic_loess_data` — 96 human cardiac proteins (disease validation only)
